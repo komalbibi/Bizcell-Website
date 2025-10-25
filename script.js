@@ -8,3 +8,13 @@ function showNextTestimonial() {
 }
 
 setInterval(showNextTestimonial, 4000); // change every 4 seconds
+
+
+//hamburger
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('toggle');
+    navMenu.classList.toggle('active');
+  });

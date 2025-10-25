@@ -8,29 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <!-- Font Awesome CDN -->
+ 
+<!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <!-- start of header -->
-    <header>
-        <div class="logo">
-            <img src="./images/asset 4.png" alt="Logo">
+  <header>
+  <div class="logo">
+    <img src="./images/asset 4.png" alt="Logo">
 
-        </div>
+  </div>
 
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hamburger icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 <!-- end of header -->
     <!-- Hero Section started -->
     <section class="hero">
@@ -352,29 +362,15 @@
   </div>
 </footer>
 
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 
  <!-- footer ended -->
 
 
 
-<!-- javascript for testimonial slider -->
-<script>
-  let index = 0;
-  const testimonials = document.querySelectorAll('.testimonial');
-  
-  function showNextTestimonial() {
-    testimonials[index].classList.remove('active');
-    index = (index + 1) % testimonials.length;
-    testimonials[index].classList.add('active');
-  }
-  
-  setInterval(showNextTestimonial, 2000); //testimonial changes after every 2 seconds
-</script>
 
-
+<script src="./script.js"></script>
 </body>
 
 </html>
